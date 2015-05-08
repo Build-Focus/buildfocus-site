@@ -23,26 +23,32 @@ body {
 
     padding: 0;
     margin: 0;
+
+    text-align: center;
+    background-color: #384145;
 }
 
 main {
-    margin: 20px 20px 0 auto;
+    margin: 0;
     display: inline-block;
-    text-align: left;
+    text-align: center;
     position: relative;
 }
 
 .splash-block {
-    text-align: right;
-    height: 100%;
+    width: 100%;
+    height: 50vh;
 
-    background-image: url('splash-back-bw.jpg');
-    background-position: 50% 0%;
+    background-image: url('splash-back.jpg');
+    background-position: 50% 40%;
     background-size: cover;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .logo {
     padding: 30px;
+    margin-top: -150px;
 
     background-image: linear-gradient(#FBBD48, #FBB840);
     color: #35281a;
@@ -87,6 +93,8 @@ main {
 .non-logo {
     position: absolute;
     width: 100%;
+    text-align: left;
+    color: #fafafa;
 }
 
 .intro {
@@ -96,13 +104,17 @@ main {
     font-family: sans;
     font-size: 15pt;
 
-    color: #fafafa;
-    background-color: rgba(0,0,0,0.3);
+    #background-color: rgba(0,0,0,0.3);
 }
 
 .signupForm {
-    background-image: linear-gradient(#FBBD48, #FBB840);
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     padding: 10px 20px;
     margin-top: 0;
+}
+
+.signupForm input {
+    width: 48%;
+    margin: 1%;
+    box-sizing: border-box;
+    float: left;
 }
