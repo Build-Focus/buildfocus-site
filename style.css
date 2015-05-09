@@ -134,6 +134,7 @@ main {
 
 .signupForm input[type=email] {
     width: 68%;
+    color: #101010;
 }
 
 .signupForm input[type=submit] {
