@@ -1,0 +1,19 @@
+.logo {
+    margin-top: -9vh;
+    padding: 1.8vh;
+}
+
+.logo h1 {
+    font-size: 18vh;
+    line-height: 14vh;
+}
+
+.intro, .signupForm {
+    font-size: 2vh;
+}
+
+.signupForm input[type=email], .signupForm input[type=submit] {
+    width: 98%;
+    clear: both;
+}
+
