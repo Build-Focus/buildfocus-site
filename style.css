@@ -113,7 +113,7 @@ main {
 }
 
 .intro p {
-    color: rgba(250, 250, 250, 0.9);
+    color: rgba(250, 250, 250, 0.6);
 }
 
 .intro strong {
@@ -139,4 +139,5 @@ main {
 
 .signupForm input[type=submit] {
     width: 28%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
