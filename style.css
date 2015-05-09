@@ -17,6 +17,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'aller';
+    src: url('fonts/Aller_Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -48,7 +55,7 @@ main {
 
 .logo {
     padding: 30px;
-    margin-top: -150px;
+    margin-top: -125px;
 
     background-image: linear-gradient(#FBBD48, #FBB840);
     color: #35281a;
@@ -101,20 +108,34 @@ main {
     padding: 0;
     margin: 0;
 
-    font-family: sans;
+    font-family: 'aller', sans;
     font-size: 15pt;
+}
 
-    #background-color: rgba(0,0,0,0.3);
+.intro p {
+    color: rgba(250, 250, 250, 0.9);
+}
+
+.intro strong {
+    color: #fff;
 }
 
 .signupForm {
-    padding: 10px 20px;
+    padding: 0;
     margin-top: 0;
+    font-family: aller;
 }
 
 .signupForm input {
-    width: 48%;
     margin: 1%;
     box-sizing: border-box;
     float: left;
+}
+
+.signupForm input[type=email] {
+    width: 68%;
+}
+
+.signupForm input[type=submit] {
+    width: 28%;
 }
