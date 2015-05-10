@@ -1,0 +1,20 @@
+.logo {
+    padding: 2vw;
+}
+
+.logo h1 {
+    font-size: 8vw;
+    line-height: 5vw;
+}
+
+.headline {
+    padding-top: 14vw;
+    font-size: 35vw;
+    line-height: 28vw;
+}
+
+.signupForm input[type=email], .signupForm input[type=submit] {
+    width: 98%;
+    clear: both;
+}
+
