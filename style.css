@@ -44,23 +44,24 @@ main {
 
 .splash-block {
     width: 100%;
-    height: 45vh;
+    height: 100%;
 
     background-image: url('splash-back.jpg');
-    background-position: 50% 40%;
+    background-position: 10% 0%;
     background-size: cover;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .logo {
-    padding: 30px;
-    margin-top: -125px;
+    padding: 20px;
 
     background-image: linear-gradient(#FBBD48, #FBB840);
     color: #35281a;
 
-    position: relative;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
@@ -70,51 +71,39 @@ main {
     padding: 0;
     font-family: 'tertreextra_bold';
     font-weight: normal;
-    font-size: 180pt;
-    line-height: 135pt;
+    font-size: 80pt;
+    line-height: 60pt;
     text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
-.logo h2 {
-    width: 100%;
-    text-align: center;
-    font-family: 'blackjack';
-    font-size: 30pt;
-    margin: 10px 0 -22px 0;
-    padding: 0;
-    font-weight: lighter;
-
-    text-shadow: 0 4px 5px rgba(0,0,0,0.2)
+.headline {
+    padding-top: 15vh;
+    font-size: 200pt;
+    line-height: 160pt;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin: 0;
+    font-family: 'tertreextra_bold';
+    font-kerning: normal;
 }
 
-.logo:before {
-    content:"";
-    border-style: solid;
-    border-width: 30px 30px 15px 0;
-    border-color: transparent transparent transparent transparent;
+.headline-follow-block {
     position: absolute;
-    left: -15px;
-    top: 0;
-    bottom: 0;
-}
-
-.non-logo {
-    position: absolute;
-    width: 100%;
     text-align: left;
-    color: #fafafa;
 }
 
 .intro {
     padding: 0;
     margin: 0;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0,0,0,0.1);
 
     font-family: 'aller', sans;
     font-size: 15pt;
 }
 
 .intro p {
-    color: rgba(250, 250, 250, 0.6);
+    color: rgba(250, 250, 250, 0.8);
 }
 
 .intro strong {
