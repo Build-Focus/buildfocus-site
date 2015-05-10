@@ -1,15 +1,16 @@
 .logo {
-    margin-top: -9vh;
-    padding: 1.8vh;
+    padding: 2vw;
 }
 
 .logo h1 {
-    font-size: 18vh;
-    line-height: 14vh;
+    font-size: 8vw;
+    line-height: 5vw;
 }
 
-.intro, .signupForm {
-    font-size: 2vh;
+.headline {
+    padding-top: 14vw;
+    font-size: 35vw;
+    line-height: 28vw;
 }
 
 .signupForm input[type=email], .signupForm input[type=submit] {

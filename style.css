@@ -47,7 +47,7 @@ main {
     height: 100%;
 
     background-image: url('splash-back.jpg');
-    background-position: 10% 0%;
+    background-position: 30% 0%;
     background-size: cover;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -73,18 +73,26 @@ main {
     font-weight: normal;
     font-size: 80pt;
     line-height: 60pt;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .headline {
     padding-top: 15vh;
-    font-size: 200pt;
-    line-height: 160pt;
     color: #fff;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
     margin: 0;
+
+    font-size: 200pt;
+    line-height: 160pt;
     font-family: 'tertreextra_bold';
-    font-kerning: normal;
+}
+
+.headline .kern-o {
+    letter-spacing: -10px;
+}
+
+.headline .kern-f {
+    letter-spacing: -14px;
 }
 
 .headline-follow-block {
@@ -96,14 +104,14 @@ main {
     padding: 0;
     margin: 0;
     color: #fff;
-    text-shadow: 0 0 3px rgba(0,0,0,0.1);
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
 
     font-family: 'aller', sans;
-    font-size: 15pt;
+    font-size: 17pt;
 }
 
 .intro p {
-    color: rgba(250, 250, 250, 0.8);
+    color: rgba(250, 250, 250, 0.85);
 }
 
 .intro strong {
@@ -114,20 +122,24 @@ main {
     padding: 0;
     margin-top: 0;
     font-family: aller;
+    font-size: 16pt;
+    font-weight: bold;
 }
 
 .signupForm input {
-    margin: 1%;
     box-sizing: border-box;
     float: left;
 }
 
 .signupForm input[type=email] {
-    width: 68%;
+    width: 64%;
+    margin-right: 2%;
+    margin-bottom: 5px;
     color: #101010;
 }
 
 .signupForm input[type=submit] {
-    width: 28%;
+    width: 33%;
+    padding-bottom: 0.55em;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
