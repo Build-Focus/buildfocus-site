@@ -57,7 +57,8 @@ main {
 .logo {
     padding: 20px;
 
-    background-image: linear-gradient(#FBBD48, #FBB840);
+    background-color: #FBB840;
+    background-image: linear-gradient(#FBCA5F, #FBB840);
     color: #35281a;
 
     position: absolute;
