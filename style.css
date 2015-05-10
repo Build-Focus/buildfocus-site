@@ -19,7 +19,8 @@
 
 @font-face {
     font-family: 'aller';
-    src: url('fonts/Aller_Rg.ttf') format('truetype');
+    src: url('fonts/Aller_Rg.ttf') format('truetype'),
+         url('fonts/aller.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
