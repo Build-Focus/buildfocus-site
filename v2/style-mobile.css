@@ -1,3 +1,12 @@
+html, body {
+    height: auto;
+}
+
+.splash-block {
+    height: auto;
+    min-height: 100%;
+}
+
 .logo {
     padding: 2vw;
 }
@@ -13,8 +22,20 @@
     line-height: 28vw;
 }
 
+.intro p {
+    font-size: 14pt;
+}
+
+.intro h3 {
+    font-size: 20pt;
+}
+
 .signupForm input[type=email], .signupForm input[type=submit] {
     width: 98%;
     clear: both;
 }
 
+.headline-follow-block {
+    position: static;
+    margin: 0 5vw;
+}
