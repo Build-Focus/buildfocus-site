@@ -8,7 +8,9 @@ html, body {
 }
 
 .logo {
-    padding: 2vw;
+    padding: 2.15vw 2vw 2vw 2vw;
+    top: 10px;
+    right: 10px;
 }
 
 .logo h1 {
@@ -17,17 +19,17 @@ html, body {
 }
 
 .headline {
-    padding-top: 14vw;
+    padding-top: 11vw;
     font-size: 35vw;
     line-height: 28vw;
 }
 
-.intro p {
-    font-size: 14pt;
+.intro h3 {
+    font-size: 18pt;
 }
 
-.intro h3 {
-    font-size: 20pt;
+.intro p {
+    font-size: 14pt;
 }
 
 .signupForm input[type=email], .signupForm input[type=submit] {
