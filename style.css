@@ -69,6 +69,7 @@ main {
     margin: 0;
     padding: 0;
     font-family: 'tertreextra_bold';
+    font-weight: normal;
     font-size: 180pt;
     line-height: 135pt;
     text-shadow: 0 2px 6px rgba(0,0,0,0.3);
