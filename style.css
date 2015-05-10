@@ -87,14 +87,11 @@ main {
     font-size: 200pt;
     line-height: 0.78;
     font-family: 'tertreextra_bold';
+    font-weight: normal;
 }
 
-.headline .kern-o {
+.headline .kern-o, .headline .kern-f {
     letter-spacing: -10px;
-}
-
-.headline .kern-f {
-    letter-spacing: -14px;
 }
 
 .headline-follow-block {

@@ -24,6 +24,10 @@ html, body {
     line-height: 28vw;
 }
 
+.headline .kern-o, .headline .kern-f {
+    letter-spacing: -1vw;
+}
+
 .intro h3 {
     font-size: 18pt;
 }
