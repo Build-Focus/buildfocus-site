@@ -95,13 +95,9 @@ main {
     letter-spacing: -10px;
 }
 
-.headline .headline-teachyourself, .headline .headline-getmoredone {
+.headline .headline-getmoredone {
     color: rgba(255,255,255, 0.8);
     text-shadow: none;
-}
-
-.headline .headline-teachyourself {
-    font-size: 66pt;
 }
 
 .headline .headline-getmoredone {
