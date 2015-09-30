@@ -50,7 +50,7 @@ body {
 
 main {
     margin: 0;
-    width: 625px;
+    width: 600px;
     display: inline-block;
     text-align: left;
     position: relative;
@@ -58,13 +58,18 @@ main {
 
 .splash-block {
     width: 100%;
-    min-height: 100%;
+    height: 500px;
 
-    background-image: url('splash-back.jpg');
-    background-position: 20% 0%;
-    background-size: cover;
+    background-color: #A5D6F5;
+    background-image: url('city.png');
+    background-image: url('city.png'), radial-gradient(circle at 50% 40%, #C8E0EF 0%, #A5D6F5 95%);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: top center;
 
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: relative;
+    margin-bottom: 120px;
 }
 
 .logo {
@@ -75,17 +80,32 @@ main {
     background-color: #FBB840;
     background-image: linear-gradient(#FBCA5F, #FBB840);
     box-shadow: 0 0 10px rgba(100, 100, 100, 0.5);
+
+    z-index: 100;
 }
 
 .logo img {
     display: block;
-    width: 110px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
+}
+
+.headline-holder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -90px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .headline {
-    padding-top: 150px;
     color: #fff;
+    background-color: #FBB840;
+
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
     margin: 0;
     text-align: left;
@@ -93,10 +113,13 @@ main {
     line-height: 0.78;
     font-family: 'tertreextra_bold';
     font-weight: normal;
+
+    display: inline-block;
+    padding: 20px;
 }
 
 .headline .headline-focus {
-    font-size: 200pt;
+    font-size: 180pt;
 }
 
 .headline .kern-o, .headline .kern-f {
@@ -104,20 +127,16 @@ main {
 }
 
 .headline .headline-getmoredone {
-    color: rgba(255,255,255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     text-shadow: none;
 }
 
 .headline .headline-getmoredone {
     line-height: 0.9;
-    font-size: 60pt;
+    font-size: 54.5pt;
 }
 
-.headline-follow-block {
-    padding-top: 40px;
-}
-
-.intro {
+.intro-text {
     padding: 0;
     margin: 0;
     color: #fff;
@@ -127,22 +146,22 @@ main {
     width: 99%;
 }
 
-.intro h3 {
+.intro-text h3 {
     margin: 24px 0 0 0;
     padding: 0;
     font-size: 24pt;
 }
 
-.intro p {
+.intro-text p {
     font-size: 19pt;
     color: rgba(250, 250, 250, 0.85);
 }
 
-.intro p:first-child {
+.intro-text p:first-child {
     margin-top: 0;
 }
 
-.intro strong {
+.intro-text strong {
     color: #fff;
 }
 
