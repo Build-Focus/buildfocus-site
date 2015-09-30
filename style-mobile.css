@@ -24,7 +24,7 @@ main {
 }
 
 .intro p {
-    font-size: 15pt;
+    font-size: 16pt;
 }
 
 .signupForm input[type=email], .signupForm input[type=submit] {
