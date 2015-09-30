@@ -1,16 +1,6 @@
-.logo {
-    padding: 2.15vw 2vw 2vw 2vw;
-    font-size: 8vw;
-    line-height: 5vw;
-}
-
 main {
     width: auto;
     margin: 0 8.5vw;
-}
-
-.headline {
-    padding-top: 9vw;
 }
 
 .headline .headline-focus {
@@ -34,7 +24,7 @@ main {
 }
 
 .intro p {
-    font-size: 14pt;
+    font-size: 15pt;
 }
 
 .signupForm input[type=email], .signupForm input[type=submit] {
@@ -45,4 +35,8 @@ main {
 .headline-follow-block {
     margin: 0;
     padding-top: 5vw;
+}
+
+.signupForm {
+    margin-top: 5vw;
 }
