@@ -65,9 +65,9 @@ body {
 }
 
 .logo {
-    position: absolute;
-    top: 16px;
-    left: 15px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
 
     background-color: #FBB840;
     background-image: linear-gradient(#FBCA5F, #FBB840);
