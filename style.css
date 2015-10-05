@@ -76,6 +76,22 @@ body {
     z-index: 100;
 }
 
+.splash-block .twitter {
+    display: inline-block;
+    position: absolute;
+    bottom: 52px;
+    margin-left: -80px;
+}
+
+.splash-block .facebook {
+    transform-origin: bottom left;
+    transform: translateX(8px) scale(1.4);
+
+    display: inline-block;
+    position: absolute;
+    bottom: 54px;
+}
+
 .logo img {
     display: block;
     width: 140px;
