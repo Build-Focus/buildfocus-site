@@ -372,14 +372,14 @@ a:hover {
     white-space: nowrap;
 }
 
-.finalSignup {
+.final-signup {
     background-color: #A5D6F5;
     background-image: radial-gradient(circle at 50% 40%, #C8E0EF 0%, #A5D6F5 95%);
     height: 170px;
     padding: 20px 0;
 }
 
-.finalSignup h2 {
+.final-signup h2 {
     font-size: 40pt;
     color: #384145;
     margin: 10px 0 0 0;
@@ -387,18 +387,18 @@ a:hover {
     font-weight: normal;
 }
 
-.finalSignup .signupForm {
+.final-signup .signupForm {
     width: 940px;
     margin: 20px auto;
 }
 
-.finalSignup input[type=email] {
+.final-signup input[type=email] {
     border-color: #384145;
     width: 620px;
     margin: 0;
 }
 
-.finalSignup input[type=submit] {
+.final-signup input[type=submit] {
     width: 300px;
     margin-left: 20px;
 }
@@ -428,7 +428,7 @@ footer .twitter img, footer .facebook img {
     display: block;
 }
 
-.detail-row:nth-child(odd), .three-step-process, .finalSignup {
+.detail-row:nth-child(odd), .three-step-process, .final-signup {
     box-shadow: inset 0  10px 10px -10px rgba(0,0,0,0.5),
                 inset 0 -10px 10px -10px rgba(0,0,0,0.5);
 }
