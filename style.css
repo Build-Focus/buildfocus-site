@@ -158,9 +158,6 @@ body {
     padding: 0;
     margin: 0;
     color: #fff;
-    text-shadow: 0 0 1px rgba(0,0,0,0.1);
-
-    font-family: 'cabin', sans-serif;
     width: 99%;
 }
 
@@ -170,17 +167,8 @@ body {
     font-size: 24pt;
 }
 
-.intro-text p {
-    font-size: 19pt;
-    color: rgba(250, 250, 250, 0.85);
-}
-
 .intro-text p:first-child {
     margin-top: 0;
-}
-
-.intro-text strong {
-    color: #fff;
 }
 
 .signupForm {
@@ -197,24 +185,25 @@ body {
 }
 
 .signupForm input[type=email] {
-    width: 64%;
-    margin-right: 2%;
+    width: 380px;
+    margin-right: 0;
     margin-bottom: 5px;
     color: #101010;
 }
 
 .signupForm input[type=submit] {
-    width: 33%;
+    width: 220px;
     padding-bottom: 0.55em;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
+    margin-left: 20px;
 }
 
 .three-step-process {
     padding: 20px 0;
     margin: 120px 0 0 0;
-    width: 100vw;
-    height: 900px;
+    width: 100%;
+    height: 800px;
 
     background-color: #A5D6F5;
     background-image: radial-gradient(circle at 50% 40%, #C8E0EF 0%, #A5D6F5 95%);
@@ -234,6 +223,10 @@ body {
     position: absolute;
 }
 
+.three-step-process p {
+    color: #222;
+}
+
 .three-step-process .start {
     top: 20px;
     left: 260px;
@@ -245,7 +238,7 @@ body {
     font-size: 48pt;
     font-family: 'tertreextra_bold', sans-serif;
     line-height: 95%;
-    font-weight: bolder;
+    font-weight: normal;
 
     background-color: #006acc;
     border-radius: 4px;
@@ -254,7 +247,7 @@ body {
     padding: 15px 40px;
 
     position: absolute;
-    top: 311px;
+    top: 211px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -288,12 +281,12 @@ body {
 }
 
 .three-step-process .success-arrow {
-    top: 356px;
+    top: 256px;
     left: 238px;
 }
 
 .three-step-process .wait-for-success {
-    top: 457px;
+    top: 357px;
     left: 150px;
     width: 200px;
 }
@@ -304,16 +297,133 @@ body {
 }
 
 .three-step-process .failure-arrow {
-    top: 356px;
+    top: 256px;
     right: 238px;
 }
 
 .three-step-process .open-facebook {
-    top: 430px;
+    top: 330px;
     right: 100px;
     width: 300px;
 }
 
+.detail-row {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.detail-row:nth-child(odd) {
+    background-color: #A5D6F5;
+    background-image: radial-gradient(circle at 50% 40%, #C8E0EF 0%, #A5D6F5 95%);
+}
+
+.detail-row:nth-child(odd) p {
+    color: #555;
+}
+
+.detail-row:nth-child(odd) strong {
+    color: #000;
+}
+
+.detail-row-container {
+    display: flex;
+    align-items: center;
+
+    width: 980px;
+    margin: 0 auto;
+    padding-right: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.detail-row-container > * {
+    margin-left: 20px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.detail-row-container img {
+    width: 300px;
+    height: 300px;
+    flex: 0 0 auto;
+}
+
+p {
+    color: rgba(210, 210, 210, 1);
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+
+    font-size: 19pt;
+    font-family: 'cabin', sans-serif;
+}
+
+strong {
+    color: #FBB840;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .nowrap {
     white-space: nowrap;
+}
+
+.finalSignup {
+    background-color: #A5D6F5;
+    background-image: radial-gradient(circle at 50% 40%, #C8E0EF 0%, #A5D6F5 95%);
+    height: 170px;
+    padding: 20px 0;
+}
+
+.finalSignup h2 {
+    font-size: 40pt;
+    color: #384145;
+    margin: 10px 0 0 0;
+    font-family: 'tertreextra_bold', sans-serif;
+    font-weight: normal;
+}
+
+.finalSignup .signupForm {
+    width: 940px;
+    margin: 20px auto;
+}
+
+.finalSignup input[type=email] {
+    border-color: #384145;
+    width: 620px;
+    margin: 0;
+}
+
+.finalSignup input[type=submit] {
+    width: 300px;
+    margin-left: 20px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .footer-container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+
+    font-family: 'cabin', sans-serif;
+    font-size: 16pt;
+}
+
+footer .twitter {
+    margin: 0 10px 0 auto;
+}
+
+footer .twitter img, footer .facebook img {
+    height: 40px;
+    display: block;
 }
