@@ -427,3 +427,12 @@ footer .twitter img, footer .facebook img {
     height: 40px;
     display: block;
 }
+
+.detail-row:nth-child(odd), .three-step-process, .finalSignup {
+    box-shadow: inset 0  10px 10px -10px rgba(0,0,0,0.5),
+                inset 0 -10px 10px -10px rgba(0,0,0,0.5);
+}
+
+.splash-block {
+    box-shadow: inset 0  -10px 10px -10px rgba(0,0,0,0.5);
+}
