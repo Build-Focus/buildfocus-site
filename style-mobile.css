@@ -1,5 +1,5 @@
 * {
-    transition: all 0.2s ease;
+    transition: height, margin, bottom 0.2s ease;
 }
 
 p {
