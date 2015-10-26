@@ -1,3 +1,7 @@
+p {
+    font-size: 17pt;
+}
+
 .logo {
     position: absolute;
 }
@@ -8,9 +12,9 @@
 }
 
 .splash-block {
-    height: 40vh;
+    height: 35vh;
     background-size: cover;
-    margin-bottom: 12vh;
+    margin-bottom: 11.5vh;
 }
 
 .headline-holder {
@@ -43,16 +47,102 @@
     padding: 0 3%;
 }
 
-.intro-text p {
-    font-size: 16pt;
-}
-
 .signupForm input[type=email], .signupForm input[type=submit] {
     width: 100%;
     clear: both;
     margin: 5px 0;
 }
 
-.three-step-process, .detail-row, .final-signup, footer {
+.three-step-process {
+    margin-top: 190px;
+    height: 247vw;
+}
+
+.three-step-process-container {
+    width: 100%;
+}
+
+.three-step-process .start,
+.three-step-process .wait-for-success,
+.three-step-process .succeed,
+.three-step-process .open-facebook,
+.three-step-process .fail {
+    left: 3%;
+    right: 3%;
+    width: 94%;
+    font-size: 7vw;
+}
+
+.three-step-process .start-button {
+    top: 50vw;
+    width: 50vw;
+    font-size: 16vw;
+    padding: 10px 1vw;
+}
+
+.three-step-process .wait-for-success {
+    top: 74vw;
+}
+
+.three-step-process .succeed {
+    top: 98vw;
+    bottom: auto;
+}
+
+.three-step-process .open-facebook {
+    top: 156vw;
+}
+
+.three-step-process .fail {
+    top: 184vw;
+    bottom: auto;
+}
+
+.three-step-process .wait-for-success:after, .three-step-process .open-facebook:after {
+    content: ":";
+}
+
+.three-step-process .clock, .three-step-process .facebook-url,
+.three-step-process .success-arrow, .three-step-process .failure-arrow {
     display: none;
+}
+
+.detail-row {
+    padding: 30px 0;
+}
+
+.detail-row-container {
+    position: relative;
+    width: 94%;
+    padding: 0;
+    margin: 0 3%;
+    flex-wrap: wrap;
+}
+
+.detail-row-container img, .detail-row-container p {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+}
+
+.detail-row-container img:last-child {
+    margin: 20px 0;
+}
+
+.final-signup {
+    height: auto;
+}
+
+.final-signup .signupForm, footer .footer-container {
+    width: 94%;
+    margin: 0 3%;
+}
+
+.final-signup h2 {
+    font-size: 10vw;
+}
+
+.final-signup .signupForm {
+    height: 120px;
+    margin: 20px 3%;
 }
