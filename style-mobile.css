@@ -1,3 +1,7 @@
+* {
+    transition: all 1s ease;
+}
+
 p {
     font-size: 17pt;
 }
