@@ -1,0 +1,102 @@
+.logo {
+    position: absolute;
+}
+
+.splash-block .twitter {
+    top: -256px;
+    right: 10px;
+
+    bottom: auto;
+    margin-left: 0;
+}
+
+.splash-block .facebook {
+    top: -291px;
+    right: 10px;
+    transform-origin: top right;
+    transform: scale(1.4);
+
+    bottom: auto;
+}
+
+.three-step-process {
+    margin-top: 0px;
+    height: 1482px;
+}
+
+.three-step-process-container {
+    width: 600px;
+}
+
+.three-step-process .start,
+.three-step-process .wait-for-success,
+.three-step-process .succeed,
+.three-step-process .open-facebook,
+.three-step-process .fail {
+    left: 3%;
+    right: 3%;
+    width: 94%;
+    font-size: 42px;
+}
+
+.three-step-process .start-button {
+    top: 300px;
+    width: 300px;
+    font-size: 96px;
+    padding: 10px 6px;
+}
+
+.three-step-process .wait-for-success {
+    top: 444px;
+}
+
+.three-step-process .succeed {
+    top: 588px;
+    bottom: auto;
+}
+
+.three-step-process .open-facebook {
+    top: 936px;
+}
+
+.three-step-process .fail {
+    top: 1104px;
+    bottom: auto;
+}
+
+.three-step-process .wait-for-success:after, .three-step-process .open-facebook:after {
+    content: ":";
+}
+
+.three-step-process .clock, .three-step-process .facebook-url,
+.three-step-process .success-arrow, .three-step-process .failure-arrow {
+    display: none;
+}
+
+.detail-row-container {
+    width: 100%;
+}
+
+.signupForm {
+    height: 130px;
+    margin: 20px 0;
+}
+
+.signupForm input[type=email], .signupForm input[type=submit] {
+    width: 100%;
+    clear: both;
+    margin: 5px 0;
+}
+
+.final-signup {
+    height: auto;
+}
+
+.final-signup .signupForm, footer .footer-container {
+    width: 94%;
+    margin: 0 3%;
+}
+
+.final-signup h2 {
+    font-size: 10vw;
+}

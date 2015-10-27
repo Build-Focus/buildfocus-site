@@ -119,6 +119,10 @@ p {
     flex-wrap: wrap;
 }
 
+.detail-row-container > * {
+    flex-basis: auto;
+}
+
 .detail-row-container img, .detail-row-container p {
     width: 100%;
     height: auto;
