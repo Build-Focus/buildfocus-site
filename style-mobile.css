@@ -55,11 +55,11 @@ p {
 
 .three-step-process {
     margin-top: 190px;
-    height: 247vw;
 }
 
 .three-step-process-container {
     width: 100%;
+    height: 247vw;
 }
 
 .three-step-process .start,
