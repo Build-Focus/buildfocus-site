@@ -57,11 +57,20 @@ p {
     margin: 5px 0;
 }
 
+.section-heading {
+    font-size: 11vw;
+}
+
+.three-step-process {
+    margin-top: 0px;
+}
+
 .three-step-process-container {
     width: 100%;
     height: 247vw;
 }
 
+.three-step-process .start-concentrating,
 .three-step-process .start,
 .three-step-process .wait-for-success,
 .three-step-process .succeed,
@@ -73,15 +82,23 @@ p {
     font-size: 7vw;
 }
 
+.three-step-process .start-concentrating {
+    top: 1vw;
+}
+
+.three-step-process .start {
+    top: 16vw;
+}
+
 .three-step-process .start-button {
-    top: 50vw;
+    top: 54vw;
     width: 50vw;
     font-size: 16vw;
     padding: 10px 1vw;
 }
 
 .three-step-process .wait-for-success {
-    top: 74vw;
+    top: 76vw;
 }
 
 .three-step-process .succeed {
@@ -98,11 +115,12 @@ p {
     bottom: auto;
 }
 
-.three-step-process .wait-for-success:after, .three-step-process .open-facebook:after {
+.three-step-process .start-concentrating:after,
+.three-step-process .wait-for-success:after,
+.three-step-process .open-facebook:after {
     content: ":";
 }
 
-.three-step-process .clock, .three-step-process .facebook-url,
 .three-step-process .success-arrow, .three-step-process .failure-arrow {
     display: none;
 }
@@ -148,4 +166,8 @@ p {
 
 .final-signup .signupForm {
     margin: 20px 3%;
+}
+
+footer .footer-container {
+    font-size: 20pt;
 }

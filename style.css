@@ -230,9 +230,9 @@ body {
 }
 
 .section-heading {
-    font-size: 40pt;
+    font-size: 45pt;
     font-family: 'tertreextra_bold', sans-serif;
-    margin: 10px 0;
+    margin: 10px 0 20px;
 }
 
 .detail-row:nth-child(odd) .section-heading {
@@ -259,7 +259,7 @@ body {
     width: 980px;
     margin: 0 auto;
     position: relative;
-    height: 740px;
+    height: 710px;
 }
 
 .three-step-process .three-step-process-container > * {
@@ -267,11 +267,23 @@ body {
 }
 
 .three-step-process p {
-    color: #222;
+    color: #384145;
+    font-weight: bold;
+    font-size: 21pt;
+}
+
+.three-step-process .start-concentrating {
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: 0;
+
+    text-align: center;
+    z-index: 1;
 }
 
 .three-step-process .start {
-    top: 20px;
+    top: 50px;
     left: 260px;
     width: 460px;
 }
@@ -290,7 +302,7 @@ body {
     padding: 15px 40px;
 
     position: absolute;
-    top: 211px;
+    top: 231px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -329,9 +341,9 @@ body {
 }
 
 .three-step-process .wait-for-success {
-    top: 200px;
-    left: 30px;
-    width: 200px;
+    top: 315px;
+    left: 158px;
+    width: 180px;
 }
 
 .three-step-process .failure-arrow {
@@ -340,19 +352,9 @@ body {
 }
 
 .three-step-process .open-facebook {
-    top: 200px;
-    right: 0px;
+    top: 315px;
+    right: 138px;
     width: 230px;
-}
-
-.three-step-process .facebook-url {
-    top: 356px;
-    right: 112px;
-}
-
-.three-step-process .clock {
-    top: 345px;
-    left: 194px;
 }
 
 .detail-row {
