@@ -19,6 +19,10 @@
     bottom: auto;
 }
 
+.intro-detail-row p {
+    padding: 20px 0;
+}
+
 .three-step-process {
     margin-top: 0px;
 }
@@ -79,7 +83,7 @@
 
 .signupForm {
     height: 130px;
-    margin: 20px 0;
+    margin: 0;
 }
 
 .signupForm input[type=email], .signupForm input[type=submit] {

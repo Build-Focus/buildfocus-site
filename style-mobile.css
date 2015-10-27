@@ -47,14 +47,14 @@ p {
     padding: 0 3%;
 }
 
+.signupForm {
+    height: 120px;
+}
+
 .signupForm input[type=email], .signupForm input[type=submit] {
     width: 100%;
     clear: both;
     margin: 5px 0;
-}
-
-.three-step-process {
-    margin-top: 190px;
 }
 
 .three-step-process-container {
@@ -147,6 +147,5 @@ p {
 }
 
 .final-signup .signupForm {
-    height: 120px;
     margin: 20px 3%;
 }
