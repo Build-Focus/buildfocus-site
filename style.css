@@ -475,6 +475,7 @@ footer {
 
 footer .footer-container {
     width: 940px;
+    height: 40px;
     margin: 0 auto;
     padding: 20px 0;
 
@@ -485,6 +486,7 @@ footer .footer-container {
 
     font-family: 'tertreextra_bold', sans-serif;
     font-size: 24pt;
+    text-align: left;
 }
 
 footer .twitter {
@@ -494,6 +496,7 @@ footer .twitter {
 footer .twitter img, footer .facebook img {
     height: 40px;
     display: block;
+    float: right;
 }
 
 .detail-row:nth-child(even), .three-step-process, .final-signup {
