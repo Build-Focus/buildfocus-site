@@ -84,12 +84,13 @@ body {
 }
 
 .splash-block .facebook {
-    transform-origin: bottom left;
-    transform: translateX(8px) scale(1.4);
+    transform-origin: top left;
+    transform: scale(1.4);
 
     display: inline-block;
     position: absolute;
-    bottom: 54px;
+    bottom: 63px;
+    padding-left: 4px;
 }
 
 .logo img {
