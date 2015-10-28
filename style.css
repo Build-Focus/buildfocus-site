@@ -403,15 +403,24 @@ body {
 
 .detail-row img {
     width: 300px;
+    box-sizing: border-box;
     margin-top: 20px;
 
     -webkit-flex: 0 0 auto;
     flex: 0 0 auto;
+
+    vertical-align: top;
 }
 
 .detail-row p {
     -webkit-align-self: flex-start;
     align-self: flex-start;
+    vertical-align: top;
+    width: 620px;
+}
+
+.detail-row .triple p {
+    width: 300px;
 }
 
 p {
