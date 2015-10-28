@@ -145,7 +145,7 @@ p {
     flex-basis: auto;
 }
 
-.detail-row-container img, .detail-row-container p {
+.detail-row-container img, .detail-row-container p, .detail-row .triple p {
     width: 100%;
     height: auto;
     margin-left: 0;
