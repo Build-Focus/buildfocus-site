@@ -215,6 +215,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     padding: 40px 0;
+    width: 300px;
 }
 
 .intro-detail-row .customizable {
@@ -390,6 +391,7 @@ body {
     margin-left: 20px;
     flex-basis: 300px;
     flex-grow: 1;
+    display: inline-block;
 }
 
 .detail-row img {
