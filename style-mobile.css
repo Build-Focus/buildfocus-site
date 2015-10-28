@@ -57,6 +57,10 @@ p {
     margin: 5px 0;
 }
 
+.detail-row-container {
+    display: block;
+}
+
 .section-heading {
     font-size: 11vw;
 }
