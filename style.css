@@ -53,8 +53,8 @@ body {
     height: 500px;
 
     background-color: #A5D6F5;
-    background-image: url('city.png');
-    background-image: url('city.png'), radial-gradient(circle at 50% 40%, #C8E0EF 0%, #A5D6F5 95%);
+    background-image: url('images/city.png');
+    background-image: url('images/city.png'), radial-gradient(circle at 50% 40%, #C8E0EF 0%, #A5D6F5 95%);
     background-size: 1204px, 100%;
     background-repeat: no-repeat;
     background-position: 50% -25%;
@@ -221,15 +221,15 @@ body {
 }
 
 .intro-detail-row .customizable {
-    background-image: url("intro-list-icon.png");
+    background-image: url("images/intro-list-icon.png");
 }
 
 .intro-detail-row .tracking {
-    background-image: url("intro-eye-icon.png");
+    background-image: url("images/intro-eye-icon.png");
 }
 
 .intro-detail-row .feedback {
-    background-image: url("intro-loop-icon.png");
+    background-image: url("images/intro-loop-icon.png");
 }
 
 .section-heading {
@@ -316,7 +316,7 @@ body {
 }
 
 .mouse-over {
-    background-image: url("cursor.png");
+    background-image: url("images/cursor.png");
     height: 30px;
     width: 18px;
 }
