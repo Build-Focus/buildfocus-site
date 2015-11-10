@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Focus and get more done. Build Focus trains you to concentrate, beat distraction, and reach your goals." />
+
+    <meta name="theme-color" content="#384145" />
+    <meta name="msapplication-navbutton-color" content="#384145" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#384145" />
+
+    <title>Build Focus</title>
+
+    <link rel="stylesheet" href="pure-min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" media="(max-width: 639px)" />
+    <link rel="stylesheet" href="style-tablet.css" media="(min-width: 640px) and (max-width: 979px)" />
+    <link rel="icon" href="favicon.ico" />
+
+    <meta property="og:url"         content="http://www.buildfocus.io" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Build Focus" />
+    <meta property="og:description" content="Train yourself to concentrate, beat distraction, and reach your goals" />
+    <meta property="og:image"       content="http://www.buildfocus.io/images/logo-facebook.png" />
+
+    <meta name="twitter:card"        content="summary" />
+    <meta name="twitter:site"        content="@buildfocus" />
+    <meta name="twitter:title"       content="Build Focus" />
+    <meta name="twitter:description" content="Train yourself to concentrate, beat distraction, and reach your goals" />
+    <meta name="twitter:image"       content="http://buildfocus.io/images/logo.png" />
+
+    <style>
+        body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .thanks {
+            width: 95%;
+            max-width: 620px;
+            text-align: left;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            font-size: 80pt;
+            line-height: 60pt;
+            margin-bottom: 40px;
+
+            color: #FBB840;
+            font-family: "tertreextra_bold";
+        }
+
+        .facebook, .twitter {
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .facebook {
+            transform: scale(1.4);
+            transform-origin: top left;
+            margin-left: 10px;
+        }
+
+        .twitter > iframe {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="thanks">
+    <h1>
+        Thank you
+    </h1>
+    <p>
+        Great to hear you're excited about <strong>Build Focus</strong> too!
+    </p>
+    <p>
+        Want to jump straight onto the next batch of invites?
+    </p>
+    <p>
+        Share <strong>Build Focus</strong> with your friends, help them get early access,
+        and hop yourself to the front of the line:
+    </p>
+
+    <div class="twitter">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.buildfocus.io" data-text="Really excited for @BuildFocus! New tool to help you focus. I've just joined the invite list; you can get in too at" data-size="large" data-related="buildfocus" data-count="none"></a>
+        <script>
+            window.twttr = (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                        t = window.twttr || {};
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+
+                t._e = [];
+                t.ready = function(f) {
+                    t._e.push(f);
+                };
+
+                return t;
+            }(document, "script", "twitter-wjs"));
+        </script>
+    </div>
+
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=1669512186593913";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="facebook">
+        <!-- <div class="fb-share-button" data-href="http://www.buildfocus.io" data-layout="button"></div> -->
+        <button>Share on Facebook</button>
+    </div>
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-62702200-1', 'auto');
+    ga('send', 'pageview');
+
+    twttr.ready(function () {
+        twttr.events.bind('click', function () {
+            ga('send', 'social', 'Twitter', 'tweet', 'http://www.buildfocus.io');
+        });
+
+        document.querySelector(".facebook").addEventListener("click", function () {
+            ga('send', 'social', 'Facebook', 'share', 'http://www.buildfocus.io');
+        });
+    });
+
+    window.fbAsyncInit = function () {
+        document.querySelector(".facebook").addEventListener("click", function () {
+            FB.ui({
+                method: 'share',
+                href: 'http://www.buildfocus.io',
+                caption: "I'm really excited for @BuildFocus! New tool to help you focus. I've just joined the invite list; you can get in too at www.buildfocus.io",
+            }, function(response){
+                if (response && !response.error_message) {
+                    ga('send', 'social', 'Facebook', 'share-cancelled', 'http://www.buildfocus.io');
+                } else {
+                    ga('send', 'social', 'Facebook', 'share', 'http://www.buildfocus.io');
+                }
+            });
+        });
+    };
+</script>
+</body>
+</html>
