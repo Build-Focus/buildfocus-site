@@ -33,44 +33,114 @@
         body {
             position: relative;
             width: 100%;
+            text-align: center;
+        }
+
+        body:before {
+            content: '';
+            display: inline-block;
             height: 100%;
+            vertical-align: middle;
+            margin-right: -0.25em;
         }
 
         .thanks {
+            display: inline-block;
+            vertical-align: middle;
             width: 95%;
             max-width: 620px;
             text-align: left;
-
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
 
         h1 {
             font-size: 80pt;
             line-height: 60pt;
-            margin-bottom: 40px;
+
+            margin: 10px 0 40px;
 
             color: #FBB840;
             font-family: "tertreextra_bold";
         }
 
+        .share-buttons {
+            width: 100%;
+        }
+
         .facebook, .twitter {
-            float: left;
+            box-sizing: border-box;
+            width: 45%;
+            padding: 10px 10px 20px;
             margin-bottom: 20px;
+            margin-right: 10px;
+
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+
+            font-family: "cabin", sans-serif;
+            font-weight: bold;
+            font-size: 20pt;
+
+            outline: 0;
+            border: none;
+        }
+
+        .facebook:hover, .twitter:hover {
+            box-shadow: 0 0 10px -1px rgba(150,150,150,0.3);
+        }
+
+        .twitter img, .facebook img {
+            display: block;
+            margin: 10px auto;
         }
 
         .facebook {
-            transform: scale(1.4);
-            transform-origin: top left;
-            margin-left: 10px;
+            background: #3B5998;
+            background: linear-gradient(to bottom, #4B69a8, #3B5998);
+            color: white;
         }
 
-        .twitter > iframe {
-            cursor: pointer;
+        .facebook:active {
+            background: linear-gradient(to top, #4B69a8, #3B5998);
+        }
+
+        .twitter {
+            background: #00ACED;
+            background: linear-gradient(to bottom, #10BCEF, #00ACED);
+            color: white;
+        }
+
+        .twitter:active {
+            background: linear-gradient(to top, #10BCEF, #00ACED);
         }
     </style>
+
+    <script>
+        window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                    t = window.twttr || {};
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=1669512186593913";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body>
 <div class="thanks">
@@ -88,39 +158,16 @@
         and hop yourself to the front of the line:
     </p>
 
-    <div class="twitter">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.buildfocus.io" data-text="Really excited for @BuildFocus! New tool to help you focus. I've just joined the invite list; you can get in too at" data-size="large" data-related="buildfocus" data-count="none"></a>
-        <script>
-            window.twttr = (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0],
-                        t = window.twttr || {};
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "https://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
+    <div class="share-buttons">
+        <a class="twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.buildfocus.io&text=Really excited for @BuildFocus! New tool to help you focus. I've just joined the invite list%3B you can get in too at" target="_blank">
+            <img src="images/twitter.png" />
+            Share on Twitter
+        </a>
 
-                t._e = [];
-                t.ready = function(f) {
-                    t._e.push(f);
-                };
-
-                return t;
-            }(document, "script", "twitter-wjs"));
-        </script>
-    </div>
-
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "http://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=1669512186593913";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <div class="facebook">
-        <!-- <div class="fb-share-button" data-href="http://www.buildfocus.io" data-layout="button"></div> -->
-        <button>Share on Facebook</button>
+        <button class="facebook">
+            <img src="images/facebook.png" />
+            Share on Facebook
+        </button>
     </div>
 </div>
 
@@ -133,22 +180,15 @@
     ga('create', 'UA-62702200-1', 'auto');
     ga('send', 'pageview');
 
-    twttr.ready(function () {
-        twttr.events.bind('click', function () {
+    document.querySelector(".twitter").addEventListener("click", function () {
             ga('send', 'social', 'Twitter', 'tweet', 'http://www.buildfocus.io');
-        });
-
-        document.querySelector(".facebook").addEventListener("click", function () {
-            ga('send', 'social', 'Facebook', 'share', 'http://www.buildfocus.io');
-        });
     });
 
     window.fbAsyncInit = function () {
         document.querySelector(".facebook").addEventListener("click", function () {
             FB.ui({
-                method: 'share',
+                method: 'feed',
                 href: 'http://www.buildfocus.io',
-                caption: "I'm really excited for @BuildFocus! New tool to help you focus. I've just joined the invite list; you can get in too at www.buildfocus.io",
             }, function(response){
                 if (response && !response.error_message) {
                     ga('send', 'social', 'Facebook', 'share-cancelled', 'http://www.buildfocus.io');
