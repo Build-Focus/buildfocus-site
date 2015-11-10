@@ -187,7 +187,7 @@
     window.fbAsyncInit = function () {
         document.querySelector(".facebook").addEventListener("click", function () {
             FB.ui({
-                method: 'feed',
+                method: 'share',
                 href: 'http://www.buildfocus.io',
             }, function(response){
                 if (response && !response.error_message) {
