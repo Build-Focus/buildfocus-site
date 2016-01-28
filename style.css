@@ -93,6 +93,20 @@ body {
     padding-left: 4px;
 }
 
+.splash-block .blog-link {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    z-index: 100;
+
+    font-family: 'tertreextra_bold';
+    font-size: 24pt;
+    line-height: 90%;
+
+    color: #fafafa;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.1)
+}
+
 .logo img {
     display: block;
     width: 140px;

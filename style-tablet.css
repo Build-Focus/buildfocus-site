@@ -3,7 +3,7 @@
 }
 
 .splash-block .twitter {
-    top: -256px;
+    top: -212px;
     right: 10px;
 
     bottom: auto;
@@ -11,7 +11,7 @@
 }
 
 .splash-block .facebook {
-    top: -291px;
+    top: -247px;
     right: 10px;
     transform-origin: top right;
     transform: scale(1.4);
