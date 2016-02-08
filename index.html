@@ -45,9 +45,9 @@
     </a>
 </div>
 
-<div class="splash-block">
+<div class="splash-block" role="banner">
     <div class="headline-holder">
-        <div class="twitter">
+        <div class="twitter" aria-label="Share Build Focus on Twitter">
             <a href="https://twitter.com/share" class="twitter-share-button" data-text="Build Focus is coming soon! Looks exciting #productivity #startup @buildfocus" data-size="large" data-related="buildfocus" data-count="none"></a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
@@ -55,7 +55,7 @@
             <span class="headline-focus"><span class="kern-f">F</span><span class="kern-o">o</span>cus</span><br/>
             <span class="headline-getmoredone">and get more done</span>
         </h1>
-        <div class="facebook">
+        <div class="facebook" aria-label="Like or share on Facebook">
             <div class="fb-like" data-href="https://www.facebook.com/buildfocus" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
         </div>
     </div>
@@ -63,7 +63,7 @@
     <a class="blog-link" href="http://blog.buildfocus.io">Read the Blog</a>
 </div>
 
-<div class="intro-block">
+<div class="intro-block" role="main">
     <div class="intro-text">
         <p>
             <strong>Build Focus</strong> trains you to concentrate, beat distraction, and reach your goals.
@@ -77,10 +77,13 @@
     <div class="signupForm">
         <form action="https://riveted.us10.list-manage.com/subscribe/post?u=f4a8c5c6bb0becec234a84789&amp;id=6c3e05dd02" method="post"
               id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="pure-form" target="_blank" novalidate>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email">
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email"
+                   title="Enter your email to get early access to Build Focus">
 
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_f4a8c5c6bb0becec234a84789_6c3e05dd02" tabindex="-1" value=""></div>
+            <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_f4a8c5c6bb0becec234a84789_6c3e05dd02" tabindex="-1" value="" aria-hidden="true">
+            </div>
 
             <input type="submit" value="Get early access" class="pure-button pure-button-primary"
                    name="subscribe" id="mc-embedded-subscribe" >
@@ -105,29 +108,29 @@
     <div class="three-step-process-container">
         <p class="start-concentrating">Start focusing</p>
 
-        <img class="start" src="images/single-nice-house.png" />
+        <img class="start" src="images/single-nice-house.png" alt="Starting city, with a single building" />
 
         <button class="start-button">
             Focus
             <div class="mouse-over"></div>
         </button>
 
-        <img src="images/left-arrow.png" class="success-arrow" />
+        <img src="images/left-arrow.png" class="success-arrow" role="presentation" />
         <p class="wait-for-success">Concentrate for 25 minutes</p>
 
-        <img class="succeed" src="images/house-with-bowling.png" />
+        <img class="succeed" src="images/house-with-bowling.png" alt="Improved city, with your building and a shiny new bowling alley" />
 
-        <img src="images/right-arrow.png" class="failure-arrow" />
+        <img src="images/right-arrow.png" class="failure-arrow" role="presentation" />
         <p class="open-facebook">Get distracted and <span class="nowrap">open facebook</span></p>
 
-        <img class="fail" src="images/single-nice-house-fire.png" />
+        <img class="fail" src="images/single-nice-house-fire.png" alt="Destroyed city, with your single building burning to the ground" />
     </div>
 </div>
 
 <div class="detail-row">
     <h2 class="section-heading">Built with Science</h2>
     <div class="detail-row-container">
-        <img src="images/feedback.png" /><p>
+        <img src="images/feedback.png" alt="Get shiny new buildings, or watch your existing buildings burn" /><p>
             <strong>Instant feedback</strong> has been
             <a href="http://jsterman.scripts.mit.edu/docs/Sterman-2009-EffectsofFeedback.pdf">repeatedly shown</a>
             to train your brain more effectively, making it easier to build habits for the long-term.
@@ -152,7 +155,9 @@
             <br/><br/>
             Need to do some research, without losing time to Twitter and Facebook? Block only them, and keep the useful
             bits of the web in your reach.
-        </p><img src="images/multiple-lists-with-city.png" style="border: 1px solid #444; border-radius: 3px"/>
+        </p><img src="images/multiple-lists-with-city.png"
+                 style="border: 1px solid #444; border-radius: 3px"
+                 alt="Choose from multiple block lists" />
     </div>
 </div>
 
@@ -183,26 +188,29 @@
     <div class="signupForm">
         <form action="https://riveted.us10.list-manage.com/subscribe/post?u=f4a8c5c6bb0becec234a84789&amp;id=6c3e05dd02" method="post"
               id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="pure-form" target="_blank" novalidate>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email">
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email"
+                   title="Enter your email to get early access to Build Focus">
 
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_f4a8c5c6bb0becec234a84789_6c3e05dd02" tabindex="-1" value=""></div>
+            <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_f4a8c5c6bb0becec234a84789_6c3e05dd02" tabindex="-1" value="" aria-hidden="true">
+            </div>
 
             <input type="submit" value="Get early access" class="pure-button pure-button-primary"
-                   name="subscribe" id="mc-embedded-subscribe" >
+                   name="subscribe" id="mc-embedded-subscribe">
         </form>
     </div>
 </div>
 
-<footer>
+<footer role="contentinfo">
     <div class="footer-container">
         <a href="mailto:contact@buildfocus.io">Contact us</a>
 
         <a class="twitter" href="https://twitter.com/buildfocus" alt="Twitter">
-            <img src="images/twitter.png" />
+            <img src="images/twitter.png" alt="Twitter" />
         </a>
         <a class="facebook" href="https://facebook.com/buildfocus" alt="Facebook">
-            <img src="images/facebook.png" />
+            <img src="images/facebook.png" alt="Facebook" />
         </a>
     </div>
 </footer>
