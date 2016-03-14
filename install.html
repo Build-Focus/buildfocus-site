@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Focus and get more done. Build Focus trains you to concentrate, beat distraction, and reach your goals." />
+
+    <meta name="robots" content="noindex">
+
+    <meta name="theme-color" content="#384145" />
+    <meta name="msapplication-navbutton-color" content="#384145" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#384145" />
+
+    <title>Build Focus</title>
+
+    <link rel="stylesheet" href="pure-min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" media="(max-width: 639px)" />
+    <link rel="stylesheet" href="style-tablet.css" media="(min-width: 640px) and (max-width: 979px)" />
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/apckocnmlmkhhigodidbpiakommhmiik">
+
+    <link rel="icon" href="favicon.ico" />
+
+    <meta property="og:url"         content="http://www.buildfocus.io" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Build Focus" />
+    <meta property="og:description" content="Train yourself to concentrate, beat distraction, and reach your goals" />
+    <meta property="og:image"       content="http://www.buildfocus.io/images/logo-facebook.png" />
+
+    <meta name="twitter:card"        content="summary" />
+    <meta name="twitter:site"        content="@buildfocus" />
+    <meta name="twitter:title"       content="Build Focus" />
+    <meta name="twitter:description" content="Train yourself to concentrate, beat distraction, and reach your goals" />
+    <meta name="twitter:image"       content="http://www.buildfocus.io/images/logo.png" />
+
+    <style>
+        body {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            font-family: Cabin, sans-serif;
+        }
+
+        body:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -0.25em;
+        }
+
+        .welcome {
+            display: inline-block;
+            vertical-align: middle;
+            width: 95%;
+            max-width: 620px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 80pt;
+            line-height: 70pt;
+
+            margin: 10px 0 40px;
+
+            color: #FBB840;
+            font-family: "tertreextra_bold";
+        }
+
+        .click-to-install {
+            font-size: 300%;
+            margin: 0 auto;
+            font-weight: bolder;
+        }
+
+        .email {
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="welcome">
+    <div class="launch-button hidden">
+        <h1>Build Focus</h1>
+        <p>Congratulations<span class="email"></span>, you're in the Build Focus alpha!</p>
+        <p>To install Build Focus and join the alpha, click the enormous button below:</p>
+        <input type="button" class="click-to-install pure-button pure-button-primary" value="Try Build Focus Now" />
+    </div>
+    <div class="unsupported-error hidden">
+        <h1>
+            This browser is not supported
+        </h1>
+        <p>
+            Sorry, you can't currently install Build Focus in this browser.
+        </p><p>
+            Build Focus is Chrome only for now. To install it, open this page in an up to date version of Chrome, not in
+            incognito mode. Other browsers and platforms are coming soon too, don't panic, it's just Chrome only to start with.
+        </p><p>
+            Not sure why this is happening? Email help@buildfocus.io to get a helping hand.
+        </p>
+    </div>
+    <div class="installation-error hidden">
+        <h1>
+            There's been an error.
+        </h1>
+        <p>
+            For some reason Build Focus has failed to install. This might be because you cancelled the installation,
+            because it's already installed, or who knows what else. Refresh this page to have another go.
+        </p><p>
+            Not sure why this is happening, or what to do about it? Email help@buildfocus.io to get a helping hand.
+        </p>
+    </div>
+    <div class="success hidden">
+        <h1>
+            Welcome to Build Focus
+        </h1>
+        <p>
+            Build Focus is installed! Congratulations.
+        </p>
+        <p>
+            Have any thoughts or feedback? You add &amp; vote on suggestions at
+            <a href="http://buildfocus.userecho.com">buildfocus.userecho.com</a>, or feel free to email directly at
+            feedback@buildfocus.io.
+        </p>
+    </div>
+</div>
+
+<script>
+    function getParameterByName(name) {
+        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
+
+    var e = getParameterByName("e");
+    var i = getParameterByName("i");
+    if (!e || e.indexOf("@") === -1 || !i || i.length < 1) window.location.href = "http://www.buildfocus.io";
+
+    document.querySelector(".email").innerHTML = " " + e;
+
+    if (chrome.webstore && chrome.webstore.install) {
+        document.querySelector(".launch-button").classList.remove("hidden");
+        document.querySelector(".click-to-install").addEventListener("click", function install() {
+            document.querySelector(".launch-button").classList.add("hidden");
+            chrome.webstore.install(undefined, function success() {
+                document.querySelector(".success").classList.remove("hidden");
+            }, function error(e) {
+                console.error(e);
+                document.querySelector(".installation-error").classList.remove("hidden");
+            });
+        });
+    } else {
+        document.querySelector(".unsupported-error").classList.remove("hidden");
+    }
+</script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-62702200-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
