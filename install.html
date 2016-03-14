@@ -138,7 +138,7 @@
 
     document.querySelector(".email").innerHTML = " " + e;
 
-    if (chrome.webstore && chrome.webstore.install) {
+    if (window.chrome && chrome.webstore && chrome.webstore.install) {
         document.querySelector(".launch-button").classList.remove("hidden");
         document.querySelector(".click-to-install").addEventListener("click", function install() {
             document.querySelector(".launch-button").classList.add("hidden");
